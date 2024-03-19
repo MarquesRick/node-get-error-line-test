@@ -1,0 +1,32 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for storing environment-based configuration
+config/env/
+
+# Directory for session data
+sessions/
+
+# Directory for build output
+dist/
+
+# dotenv environment variable files
+.env
+
+# Debugging files
+npm-debug.log*
+
+# Yarn integrity file
+.yarn-integrity
+
+*.txt
