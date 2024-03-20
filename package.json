@@ -1,11 +1,23 @@
 {
-  "name": "node",
+  "name": "get-error-lines",
   "version": "1.0.0",
-  "description": "",
+  "files": [
+    "data"
+  ],
+  "description": "Program to get errors newman tests",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js data.txt",
+    "build": "pkg ."
   },
-  "author": "",
-  "license": "ISC"
+  "pkg": {
+    "assets": [
+      "./data.txt",
+      "./data_selected.txt"
+    ]
+  },
+  "author": "Henrique Marques",
+  "license": "MIT"
 }
