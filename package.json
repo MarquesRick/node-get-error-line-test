@@ -1,6 +1,8 @@
 {
   "name": "get-error-lines",
   "version": "1.0.0",
+  "author": "Henrique Marques",
+  "license": "MIT",
   "files": [
     "./data.txt"
   ],
@@ -17,7 +19,5 @@
       "./data.txt",
       "./data_selected.txt"
     ]
-  },
-  "author": "Henrique Marques",
-  "license": "MIT"
+  }
 }

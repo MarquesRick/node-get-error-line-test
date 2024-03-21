@@ -18,7 +18,7 @@ config/env/
 sessions/
 
 # Directory for build output
-dist/
+#dist/
 
 # dotenv environment variable files
 .env

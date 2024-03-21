@@ -1,16 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-console.log('ℹ️ SO: ', process.platform);
-
 const fileName = process.argv[2];
 if (fileName)
     readFile(fileName)
         .then((outputFilePath) => {
-            console.log(`\n\n✅ Selected lines have been saved to ${outputFilePath}`);
+            console.log(`\n✅ Selected lines have been saved to ${outputFilePath}`);
         })
         .catch((error) => {
-            console.error('\n\n🚨 Error:', error);
+            console.error('\n🚨 Error:', error);
         });
 else console.error('ℹ️ Usage: node index.js <file-name>');
 
@@ -22,9 +20,10 @@ function readFile(fileName) {
         const filePath = path.join(path.dirname(process.execPath), fileName);
         const outputFilePath = filePath.replace('.txt', '_selected.txt');
 
+        console.warn('ℹ️ SO: ', process.platform);
         console.info(`\n🎯 File name: ${fileName}`);
-        console.info(`\n🎯 File path: ${filePath}`);
-        console.info(`\n🎯 Output File path: ${outputFilePath}`);
+        console.info(`🎯 File path: ${filePath}`);
+        console.info(`🎯 Output File path: ${outputFilePath}`);
 
         let errorLines = 0;
 
